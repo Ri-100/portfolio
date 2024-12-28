@@ -1,0 +1,444 @@
+.areas-of-interest {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.areas-of-interest .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 40px; /* Increased spacing between grid items */
+    margin-top: 1.5em;
+    padding: 0 20px;
+}
+
+.areas-of-interest .feature {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 20px; /* Padding for spacing inside the box */
+    background: #cccccc; /* Darker grey background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-align text inside boxes */
+    min-height: 220px; /* Ensures consistent height */
+}
+
+.areas-of-interest .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.areas-of-interest .feature .icon {
+    font-size: 2em; /* Icon size */
+    color: #333333;
+    margin-bottom: 15px; /* Space between the icon and title */
+}
+
+.areas-of-interest .feature h3 {
+    font-size: 1.2em; /* Title font size */
+    font-weight: 600;
+    margin-bottom: 10px; /* Space below the title */
+    color: #222222;
+}
+
+.areas-of-interest .feature p {
+    font-size: 0.9em; /* Paragraph font size */
+    color: #666666;
+    line-height: 1.6; /* Better readability */
+    margin-top: 5px;
+    margin-bottom: 0; /* Removes extra bottom spacing */
+}
+
+/* Adjust layout for responsiveness */
+@media (max-width: 1024px) {
+    .areas-of-interest .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        gap: 30px; /* Adjusted gap for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .areas-of-interest .features-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+        gap: 20px; /* Adjusted gap for smaller screens */
+    }
+}
+/* Responsive Photo Section */
+/* Responsive Photo Section */
+/* Main Container */
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photo-container {
+    max-width: 200px; /* Restricts the photo width */
+    margin-bottom: 15px;
+}
+
+.responsive-photo {
+    width: 100%;
+    border-radius: 50%; /* Makes the photo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.intro-text {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Right Section */
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows precise positioning */
+}
+
+.resume-box {
+    background: #d3d3d3; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px; /* Restricts box width */
+    width: 100%;
+    margin-right: -40px; /* Shifts the box slightly to the left */
+}
+
+.resume-box h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4caf50; /* Green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.resume-link:hover {
+    background: #45a049; /* Darker green on hover */
+}
+/* Certifications Section */
+/* Certifications Section */
+.certifications {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.certifications .major {
+    margin-bottom: 20px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.certificate {
+    background: #f5f5f5; /* Light grey background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Fixed width for uniformity */
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.certificate h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.certificate p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.certificate-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #4caf50; /* Green background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.certificate-link:hover {
+    background: #45a049; /* Darker green on hover */
+}
+/* Achievements and Glory Section */
+.achievements {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.achievements .major {
+    margin-bottom: 20px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.achievement {
+    background: #f5f5f5; /* Light grey background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Fixed width for uniformity */
+}
+
+.achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.achievement h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.achievement p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.achievement-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4caf50; /* Green background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.achievement-link:hover {
+    background: #45a049; /* Darker green on hover */
+}
+/* Outro Section */
+.outro {
+    background: #f5f5f5; /* Light grey background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px; /* Add spacing below the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.outro-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.outro-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.outro-text h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.outro-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.outro-gif {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .outro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .outro-text {
+        max-width: 100%;
+    }
+
+    .outro-gif {
+        max-width: 100%;
+    }
+}
+.container {
+    padding-bottom: 150px; /* Add space below the entire container */
+}
+/* Quick Navigation Section */
+/* Quick Navigation Section */
+/* Quick Navigation Section */
+.quick-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    align-items: center;
+}
+
+/* Common Button Styles */
+.quick-nav a {
+    text-decoration: none;
+    color: #333; /* Dark color for icons and labels */
+    display: flex;
+    flex-direction: column; /* Icon above label */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+/* Icon Container */
+.icon-container {
+    background: #ffffff; /* White background for buttons */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes buttons round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid #333; /* Border for visibility */
+}
+
+/* Icon Styles */
+.icon-container i {
+    font-size: 1.5em;
+    color: #333; /* Dark color for icons */
+}
+
+/* Hover Effects */
+.quick-nav a:hover .icon-container {
+    transform: scale(1.1); /* Slight zoom */
+    background: #f0f0f0; /* Light grey background on hover */
+}
+
+.quick-nav a:hover i {
+    color: #000; /* Darker icon color on hover */
+}
+
+/* Label Styles */
+.quick-nav a span {
+    font-size: 0.9em;
+    color: #333; /* Dark color for labels */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quick-nav {
+        right: 10px; /* Adjust position for smaller screens */
+    }
+
+    .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-container i {
+        font-size: 1.2em;
+    }
+
+    .quick-nav a span {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-nav {
+        right: 5px; /* Adjust position further */
+    }
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-container i {
+        font-size: 1em;
+    }
+
+    .quick-nav a span {
+        font-size: 0.7em;
+    }
+}
